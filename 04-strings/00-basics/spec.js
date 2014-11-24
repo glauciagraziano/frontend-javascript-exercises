@@ -50,6 +50,7 @@ describe("sliceItAndCombineIt", function() {
   });
 });
 
+
 describe("findFirstMatch", function() {
   it("should be defined", function() {
     expect(challenge.findFirstMatch).to.exist;
@@ -102,4 +103,3 @@ describe("substringBetweenMatches", function() {
     expect(result).to.eql(" day to play during the ");
   });
 });
-
