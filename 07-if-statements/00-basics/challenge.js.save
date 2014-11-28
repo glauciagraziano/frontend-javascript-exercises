@@ -1,0 +1,38 @@
+module.exports.favoriteNumber = function(fav, guess){
+  if (guess > fav) {
+    return "Too high";
+  }
+  if (guess < fav) {
+    return "Too low";
+  }
+  if (guess === fav) {
+    return "You got it!"
+  }
+};
+
+module.exports.checkLock = function(num1, num2, num3, num4) {
+  if (num1 == 3 || 5 || 7) {
+    return "correct";
+  } else {
+  
+  if (num2 == 2) {
+    return "correct";
+  }
+  else {
+    return "incorrect";
+  }
+  if ( num3 >= 5 && num3 <= 100) {
+    return "correct";
+  }
+  else {
+    return "incorrect";
+  }
+  if (num4 <= 9 || num4 >= 20) {
+    return "correct";
+  }
+  else {
+    return "incorrect";
+  }
+};
+/*
+module.exports.canIGet = undefined;*/
