@@ -99,3 +99,4 @@ describe("canIGet", function() {
     expect(challenge.canIGet("Snapple", 10000000)).to.be.false;
   });
 });
+
