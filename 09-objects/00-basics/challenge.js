@@ -8,15 +8,10 @@ module.exports.createCourse = function(courseTitle, courseDuration, courseStuden
 };
 
 module.exports.addProperty = function(object, newProp, newValue) {
-  var addProperty = {
-    favoriteStudent: "Mark",
-    school: "Berkeley High School",
-    subject: "Algebra 2"
-  };
   if (object.hasOwnProperty(newProp)) {  
-    return object;
-  } else {
-    return addProperty;}
+  } else  {
+    object[newProp] = newValue; }
+  return object;
 };
 
 module.exports.formLetter = function(letter) {
