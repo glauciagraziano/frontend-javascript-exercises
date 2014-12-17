@@ -14,22 +14,14 @@ module.exports.extend = function(dest, src) {
 };
 
 module.exports.hasElems = function(object, array) {
-  // check if array is empty
   if (array.length == 0) {
     return true;
   } else {
-     // if array isn't empty read the array
-     for (counter =0; counter < array.length; counter++) {
-        // check if array element is not  key in the object
-         var property = array[counter]; 
-         if (!object.hasOwnProperty(property)) {
-            return false;
-          
-         }
-   }  
-
-   return true;
+  for (var property in object) {
+    if (array.indexOf(object[property]) = -1) {
+       return false;
+    }
   }
-
+   return true; 
+ }
 };
-

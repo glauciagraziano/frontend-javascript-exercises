@@ -47,7 +47,6 @@ describe("splitAndLowerCaseString", function() {
   });
 });
 
-
 describe("addIndex", function() {
   it("should be defined", function() {
     expect(challenge.addIndex).to.exist;

@@ -1,0 +1,20 @@
+
+[0m[0m
+[0m  copy[0m
+  [32m  ✓[0m[90m should be defined [0m
+  [32m  ✓[0m[90m should create a new object with a copy of all the data [0m
+
+[0m  extend[0m
+  [31m  1) should be defined[0m
+  [31m  2) should correctly extends two hashes that are unique[0m
+  [31m  3) should correctly extend two hashes that are have keys in common[0m
+
+[0m  hasElems[0m
+  [31m  4) should be defined[0m
+  [31m  5) returns true for an empty array[0m
+  [31m  6) returns true if it has all the keys[0m
+  [31m  7) returns false if one or more of the keys isn't in the hash[0m
+
+
+[92m [0m[32m 2 passing[0m[90m (14ms)[0m
+
